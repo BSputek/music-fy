@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Now</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="most_popular.css">
+    <script src="https://kit.fontawesome.com/438aebc372.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="main_page.html"><h1>MUSIC-FY</h1></a>
+        <nav>
+            <div class="nav">
+                <a href="popular_now.html ">POPULAR NOW</a>
+                <a href="my_playlists.html">MY PLAYLISTS</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>MOST POPULAR</h1>
+        <div class="artist-popular">
+            <div class="artist-info">
+                <h2>Playboi Carti</h2>
+                <img src="images/carti/cartipfp.jfif" alt="Playboi Cartis Image">
+            </div>
+            <div class="artist-music">
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/dielitcover.jpg" alt="die lit album cover">
+                    <p>R.I.P</p>
+                    <p>Playboi Carti</p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/dielitcover.jpg" alt="die lit album cover">
+                    <p>MILEAGE</p>
+                    <p>Playboi Carti</p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/wholelottared.png" alt="whole lotta red album cover">
+                    <p>ILoveUIHateU</p>
+                    <p>Playboi Carti</p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/wholelottared.png" alt="whole lotta red album cover">
+                    <p>CONTROL</p>
+                    <p>Playboi Carti</p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/playboicarti.png" alt="playboi carti album cover">
+                    <p>wokeuplikethis*</p>
+                    <p>Playboi Carti</p>
+                </div>
+            </div>
+            <a href="playboi_carti.html">SHOW MORE</a>
+        </div>
+        
+        <div class="artist-popular">
+            <div class="artist-info">
+                <h2>Destroy Lonely</h2>
+                <img src="images/lone/destroylonely.jpg" alt="Playboi Cartis Image">
+            </div>
+            <div class="artist-music">
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/lone/iflooksck.jfif" alt="if looks could kill album cover">
+                    <p>if looks could kill</p>
+                    <p>Destroy Lonely</p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/lone/iflooksck.jfif" alt="if looks could kill album cover">
+                    <p>which way</p>
+                    <p>Destroy Lonely</p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/lone/nostylist.png" alt="nostylist album cover">
+                    <p>JETLGGD</p>
+                    <p>Destroy Lonely</p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/lone/nostylist.png" alt="nostylist cover">
+                    <p>NOSTYLIST</p>
+                    <p>Destroy Lonely</p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/lone/love.jpg" alt="love album cover">
+                    <p>Oh Yeah</p>
+                    <p>Destroy Lonely</p>
+                </div>
+            </div>
+            <a href="destroy_lonely.html"><p>SHOW MORE</p></a>
+        </div>
+    </main>
+    <footer>
+        <p>My Music App &copy;Bartosz Sputek 2024 </p>
+        <div class="social-medias">
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+            <a href="">Snapchat</a>
+        </div>
+    </footer>
+    <div class="music-playing">
+        <div class="music-playing-info">
+            <img src="images/carti/dielitcover.jpg" alt="die lit album cover">
+            <div class="music-name-artist">
+                <p>R.I.P</p>
+                <p id="music-playing-creator">Playboi Carti</p>
+            </div>
+        </div>
+        <div class="custom-audio-player-mid">
+            <audio id="audio" src="/music/destroy-lonely/howufeel-destrony_lonely.mp3"></audio>
+            <div class="audio-controls-top">
+                <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i><i class="fa-solid fa-play" style="color: #ffffff;"></i><i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+            </div>
+            <div class="custom-audio-player-bot">
+                <progress id="progressBar" min="0" max="100" value="0"></progress>
+            </div>
+          </div>
+          <div class="custom-audio-player-right">
+            <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i><input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+          </div>
+    </div>
+</body>
+</html>

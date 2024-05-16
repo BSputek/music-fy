@@ -1,0 +1,22 @@
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+    margin: 2%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(87,22,125,0.4) 32%, rgba(0,0,0,0.4) 100%);
+    border-radius: 15px;
+    transition: ease-in-out 0.2s;
+    transition: all 0.2s;
+    border: 1px rgba(84, 7, 136, 0.4) solid;
+}
+
+.music:hover{
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,22,125,1) 32%, rgba(0,0,0,1) 100%); */
+    font-size: 90%;
+    background: rgb(9,7,34);
+background: linear-gradient(90deg, rgba(9,7,34,1) 0%, rgba(38,17,51,1) 49%, rgba(0,0,0,1) 100%);
+    
+}

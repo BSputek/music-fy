@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlists</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="playlists.css">
+    <script src="https://kit.fontawesome.com/438aebc372.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <header> <a href="main_page.html"><h1>MUSIC-FY</h1></a>
+            <nav>
+                <div class="nav">
+                    <a href="popular_now.html">POPULAR NOW</a>
+                    <a href="my_playlists.html">MY PLAYLISTS</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </nav></header>
+        <main>
+            <div class="playlist">
+                <div class="playlist-info">
+                    <h3>Do nauki </h3>
+                    <p>Opis playlisty</p>
+                    <input type="text" placeholder="Search In Playlist">
+                </div>
+                <div class="playlist-musics">
+                    <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                        <img src="images/carti/dielitcover.jpg" alt="die lit album cover">
+                        <p>R.I.P</p>
+                        <p>Playboi Carti</p>
+                    </div>
+                    <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                        <img src="images/lone/iflooksck.jfif" alt="if looks could kill album cover">
+                        <p>HOW U FEEL?</p>
+                        <p>Destroy Lonely</p>
+                    </div>
+                    <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                        <img src="images/ken/agckencarson.webp" alt="a great chaos album cover">
+                        <p>PARANOID</p>
+                        <p>Ken Carson</p>
+                    </div>
+                    <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                        <img src="images/triplin/stillprettytriplin.jpg" alt="still pretty album Cover">
+                        <p>WHAT DA HOE CRIED</p>
+                        <p>Eem Triplin</p>
+                    </div>
+            </div>
+            </div>
+            <div class="playlist">
+                <div class="playlist-info">
+                    <h3>Relaks</h3>
+                    <p>Opis playlisty</p>
+                    <input type="text" placeholder="Search In Playlist">
+                </div>
+                <div class="playlist-musics">
+                    <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                        <img src="images/lone/iflooksck.jfif" alt="if looks could kill album cover">
+                        <p>HOW U FEEL?</p>
+                        <p>Destroy Lonely</p>
+                    </div>
+                    <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                        <img src="images/lone/iflooksck.jfif" alt="if looks could kill album cover">
+                        <p>HOW U FEEL?</p>
+                        <p>Destroy Lonely</p>
+                    </div>
+                    <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                        <img src="images/lone/iflooksck.jfif" alt="if looks could kill album cover">
+                        <p>HOW U FEEL?</p>
+                        <p>Destroy Lonely</p>
+                    </div>
+                    <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                        <img src="images/lone/iflooksck.jfif" alt="if looks could kill album cover">
+                        <p>HOW U FEEL?</p>
+                        <p>Destroy Lonely</p>
+                    </div>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <p>My Music App &copy;Bartosz Sputek 2024 </p>
+            <div class="social-medias">
+                <a href="">Instagram</a>
+                <a href="">Facebook</a>
+                <a href="">Snapchat</a>
+            </div>
+        </footer>
+        <div class="music-playing">
+            <div class="music-playing-info">
+                <img src="images/carti/dielitcover.jpg" alt="die lit album cover">
+                <div class="music-name-artist">
+                    <p>R.I.P</p>
+                    <p id="music-playing-creator">Playboi Carti</p>
+                </div>
+            </div>
+            <div class="custom-audio-player-mid">
+                <audio id="audio" src="/music/destroy-lonely/howufeel-destrony_lonely.mp3"></audio>
+                <div class="audio-controls-top">
+                    <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i><i class="fa-solid fa-play" style="color: #ffffff;"></i><i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                </div>
+                <div class="custom-audio-player-bot">
+                    <progress id="progressBar" min="0" max="100" value="0"></progress>
+                </div>
+              </div>
+              <div class="custom-audio-player-right">
+                <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i><input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+              </div>
+        </div>
+</body>
+</html>

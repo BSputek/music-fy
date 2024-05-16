@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playboi Carti</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="artist_page.css">
+    <link rel="stylesheet" href="song_design.css">
+    <script src="https://kit.fontawesome.com/438aebc372.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="main_page.html"><h1>MUSIC-FY</h1></a>
+        <nav>
+            <div class="nav">
+                <a href="popular_now.html ">POPULAR NOW</a>
+                <a href="my_playlists.html">MY PLAYLISTS</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="artist-main">
+            <div class="popular-songs">
+                <h3>Popularne</h3>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/playboicarti.png" alt="plauboi carti album cover">
+                    <p>Magnolia</p>
+                    <p><a href="playboi_carti.html">Playboi Carti</a></p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/dielitcover.jpg" alt="die lti album cover">
+                    <p>FlatBed Freestyle</p>
+                    <p><a href="playboi_carti.html">Playboi Carti</a></p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/wholelottared.png" alt="whole lotta red album cover">
+                    <p>Sky</p>
+                    <p><a href="playboi_carti.html">Playboi Carti</a></p>
+                </div>
+                
+            </div>
+            <div class="artist-albums">
+                <h3>Albumy</h3>
+                <div class="album">
+                    <h4>Whole Lotta Red</h4>
+                    <img src="images/carti/wholelottared.png" alt="Whole Lotta Red album cover">
+                    <p>2020</p>
+                </div>
+                <div class="album">
+                    <h4>Die Lit</h4>
+                    <img src="images/carti/dielitcover.jpg" alt="Die Lit album cover">
+                    <p>2018</p>
+                </div>
+                <div class="album">
+                    <h4>Playboi Carti</h4>
+                    <img src="images/carti/playboicarti.png" alt="Whole Lotta Red album cover">
+                    <p>2017</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="artist-aside">
+            <div class="artist-header">
+                <h2>Playboi Carti</h2>
+                <p>59 038 576 słuchaczy w miesiącu</p>
+            </div>
+            <img src="images/carti/cartipfp.jfif" alt="Playboi Carti Image">
+            <p>Playboi Carti to amerykański raper i producent muzyczny, który zdobył ogromną popularność wśród młodego pokolenia. Jego unikalny styl rapu, energiczne występy sceniczne oraz charakterystyczne brzmienie sprawiają, że jest jednym z najbardziej rozpoznawalnych artystów w branży muzycznej.</p>
+        </div>
+    </main>
+    <footer>
+        <p>My Music App &copy;Bartosz Sputek 2024 </p>
+        <div class="social-medias">
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+            <a href="">Snapchat</a>
+        </div>
+    </footer>
+    <div class="music-playing">
+        <div class="music-playing-info">
+            <img src="images/carti/dielitcover.jpg" alt="die lit album cover">
+            <div class="music-name-artist">
+                <p>R.I.P</p>
+                <p id="music-playing-creator">Playboi Carti</p>
+            </div>
+        </div>
+        <div class="custom-audio-player-mid">
+            <audio id="audio" src="/music/destroy-lonely/howufeel-destrony_lonely.mp3"></audio>
+            <div class="audio-controls-top">
+                <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i><i class="fa-solid fa-play" style="color: #ffffff;"></i><i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+            </div>
+            <div class="custom-audio-player-bot">
+                <progress id="progressBar" min="0" max="100" value="0"></progress>
+            </div>
+          </div>
+          <div class="custom-audio-player-right">
+            <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i><input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+          </div>
+    </div>
+</body>
+</html>

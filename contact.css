@@ -1,0 +1,95 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main>h2{
+    flex-basis: 100%;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    row-gap: 1vw;
+    border-radius: 15px;
+    padding: 1%;
+    font-size: 2rem;
+}
+
+form>input{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(87,22,125,0.4) 32%, rgba(0,0,0,0.4) 100%);
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgb(117, 43, 124);
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 10px;
+}
+
+form>textarea{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(87,22,125,0.4) 32%, rgba(0,0,0,0.4) 100%);
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgb(117, 43, 124);
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+    resize: none;
+    border-radius: 10px;
+}
+
+form>button{
+    background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(87,22,125,0.4) 32%, rgba(0,0,0,0.4) 100%);
+    padding: 2%;
+    border: 1px solid rgb(117, 43, 124);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+main>.social-medias{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.social-medias>p{
+    color: rgb(255, 177, 251);
+}
+
+@media(max-width: 800px){
+    form{
+        flex-basis: 80%;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        row-gap: 4vw;
+        padding: 2%;
+        margin-bottom: 4%;
+    }
+    form>input, form>textarea, form>button{
+        font-size: 1.3rem;
+        width: 70%;
+    }
+    main>.social-medias{
+        width: 80%;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4%;
+    }
+    main>.social-medias>p{
+        margin-bottom: 3%;
+    }
+    main>.social-medias>a{
+        margin: 2%;
+    }
+}

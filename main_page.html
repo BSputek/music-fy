@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-fy</title>
+    <script src="https://kit.fontawesome.com/438aebc372.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="song_design.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main_page.css">
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <header>
+            <a href="main_page.html"><h1>MUSIC-FY</h1></a>
+            <nav>
+                <div class="nav">
+                    <a href="popular_now.html ">POPULAR NOW</a>
+                    <a href="my_playlists.html">MY PLAYLISTS</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="recently-played">
+                <h2>RECENTLY PLAYED</h2>
+                <div class="recent-music">
+                    <div class="cover">
+                        <h3>HOW U FEEL?</h3>
+                        <img src="images/lone/iflooksck.jfif" alt="Destroy Lonely If looks cood kill album cover">
+                        <p>Destroy Lonely</p>
+                    </div>
+                </div>
+                <div class="recent-music">
+                    <div class="cover">
+                        <h3>Control</h3>
+                        <img src="images/carti/wholelottared.png" alt="whole lotta red album cover">
+                        <p>Playboi Carti</p>
+                    </div>
+                </div>
+                <div class="recent-music">
+                    <div class="cover">
+                        <h3>WHAT DA OPP SAID</h3>
+                        <img src="images/triplin/stillprettytriplin.jpg" alt="still pretty album cover">
+                        <p>Eem Triplin</p>
+                    </div>
+                </div>
+                <div class="recent-music">
+                    <div class="cover">
+                        <h3>Nightcore</h3>
+                        <img src="images/ken/agckencarson.webp" alt="a great chaos album cover">
+                        <p>Ken Carson</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="recommended">
+                <h2>RECOMMENDED FOR YOU</h2>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/playboicarti.png" alt="playboi carti album cover">
+                    <p>Magnolia</p>
+                    <p><a href="playboi_carti.html">Playboi Carti</a></p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/playboicarti.png" alt="playboi carti album cover">
+                    <p>wokeuplikethis*</p>
+                    <p><a href="playboi_carti.html">Playboi Carti</a></p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/carti/wholelottared.png" alt="whole lotta red album cover">
+                    <p>New Neon</p>
+                    <p><a href="playboi_carti.html">Playboi Carti</a></p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/lone/iflooksck.jfif" alt="if looks could kill album cover">
+                    <p>which way</p>
+                    <p><a href="playboi_carti.html">Destroy Lonely</a></p>
+                </div>
+                <div class="music" value="/music/destroy-lonely/howufeel-destrony_lonely.mp3">
+                    <img src="images/ken/agckencarson.webp" alt="a great chaos album cover">
+                    <p>i need u</p>
+                    <p><a href="playboi_carti.html">Ken Carson</a></p>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <p>My Music App &copy;Bartosz Sputek 2024 </p>
+            <div class="social-medias">
+                <a href="">Instagram</a>
+                <a href="">Facebook</a>
+                <a href="">Snapchat</a>
+            </div>
+        </footer>
+        <div class="music-playing">
+            <div class="music-playing-info">
+                <img src="images/carti/dielitcover.jpg" alt="">
+                <div class="music-name-artist">
+                    <p>R.I.P</p>
+                    <p id="music-playing-creator">Playboi Carti</p>
+                </div>
+            </div>
+            <div class="custom-audio-player-mid">
+                <audio id="audio" src="/music/destroy-lonely/howufeel-destrony_lonely.mp3"></audio>
+                <div class="audio-controls-top">
+                    <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i><i class="fa-solid fa-play" style="color: #ffffff;"></i><i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                </div>
+                <div class="custom-audio-player-bot">
+                    <progress id="progressBar" min="0" max="100" value="0"></progress>
+                </div>
+              </div>
+              <div class="custom-audio-player-right">
+                <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i><input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+              </div>
+        </div>
+</body>
+</html>

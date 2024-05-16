@@ -1,0 +1,74 @@
+img{
+    width: 8%;
+    border-radius: 10px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist{
+    background-color: rgba(20, 31, 65, 0.4);
+    border-radius: 15px;
+    flex-basis: 70%;
+    padding: 1%;
+    margin: 2%;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+    margin: 2%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(87,22,125,0.4) 32%, rgba(0,0,0,0.4) 100%);
+    border-radius: 15px;
+    transition: ease-in-out 0.2s;
+    transition: all 0.2s;
+    border: 1px rgba(84, 7, 136, 0.4) solid;
+}
+
+.music:hover{
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,22,125,1) 32%, rgba(0,0,0,1) 100%); */
+    font-size: 90%;
+    background: rgb(9,7,34);
+background: linear-gradient(90deg, rgba(9,7,34,1) 0%, rgba(38,17,51,1) 49%, rgba(0,0,0,1) 100%);
+}
+
+.playlist-info>input{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(87,22,125,0.4) 32%, rgba(0,0,0,0.4) 100%);
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgb(117, 43, 124);
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+@media(max-width: 800px){
+    .playlist{
+        flex-basis: 90%;
+    }
+    .playlist-info>input{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(87,22,125,0.4) 32%, rgba(0,0,0,0.4) 100%);
+        text-shadow: none;
+        box-shadow: none;
+        border: 1px solid rgb(117, 43, 124);
+        text-align: center;
+        font-size: 0.8rem;
+        color: #fff;
+    }
+    .music{
+        font-size: 0.7rem;
+    }
+    .music>img{
+        width: 12%;
+    }
+}

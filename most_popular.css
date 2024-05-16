@@ -1,0 +1,97 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artist-popular{
+    flex-basis: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.artist-info{
+    flex-basis: 50%;
+}
+
+.artist-info>img{
+    border-radius: 15px;
+    width: 80%;
+}
+
+.artist-music{
+    flex-basis: 50%;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+    margin: 2%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(87,22,125,0.4) 32%, rgba(0,0,0,0.4) 100%);
+    border-radius: 15px;
+    transition: ease-in-out 0.2s;
+    transition: all 0.2s;
+    border: 1px rgba(84, 7, 136, 0.4) solid;
+    font-size: 1.5rem;
+}
+
+.music:hover{
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,22,125,1) 32%, rgba(0,0,0,1) 100%); */
+    font-size: 90%;
+    background: rgb(9,7,34);
+background: linear-gradient(90deg, rgba(9,7,34,1) 0%, rgba(38,17,51,1) 49%, rgba(0,0,0,1) 100%);
+}
+
+.music>img{
+    width: 15%;
+    border-radius: 15px;
+}
+
+.music>p:nth-child(3){
+    color: rgb(144, 144, 144);
+}
+
+main>h1{
+    margin-bottom: 2%;
+    flex-basis: 100%;
+}
+
+.artist-popular>a{
+    /* font-size: 1rem; */
+    padding: 1%;
+    text-align: end;
+    flex-basis: 100%;
+}
+
+@media(max-width: 800px){
+    .music{
+        font-size: 0.6rem;
+    }
+    .artist-info>img{
+        display: none;
+    }
+    .artist-info{
+        flex-basis: 100%;
+    }
+    .artist-music{
+        flex-basis: 100%;
+    }
+    .artist-popular{
+        flex-basis: 80%;
+    }
+    .artist-popular>a{
+        font-size: 0.5rem;
+        padding: 1%;
+        text-align: center;
+        flex-basis: 100%;
+    }
+}
+
