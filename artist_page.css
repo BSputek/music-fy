@@ -8,8 +8,7 @@ main{
 
 .artist-header{
     flex-basis: 100%;
-    /* background-image: url(/images/carti/carti_background.webp); */
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 3%;
     text-align: start;
     margin-bottom: 1%;
@@ -21,6 +20,19 @@ main{
 
 .popular-songs{
     text-align: start;
+    background-color: #000;
+    padding: 2%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    border: 2px solid rgb(58, 188, 235, 1);
+    -webkit-box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+    -moz-box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+    box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+}
+
+.popular-songs>.music{
+    background-color: rgb(20, 20, 20);
 }
 
 .artist-albums{
@@ -57,7 +69,11 @@ main{
 
 .artist-aside{
     flex-basis: 30%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(58, 188, 235);
+    /* -webkit-box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+    -moz-box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+    box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1); */
     padding: 1%;
     border-radius: 1vw;
     font-size: 1vw;

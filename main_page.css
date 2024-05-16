@@ -28,11 +28,31 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
     width: 70%;
     border-radius: 15px;
+    border: 2px solid rgb(59, 188, 235);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1%;
+    -webkit-box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+-moz-box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+}
+
+.cover>i{
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 11px;
+    padding-left: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.cover>i:hover{
+    background-color: rgba(58, 188, 235, 1);
+    transform: scale(1.15);
 }
 
 .cover>h3{
@@ -55,14 +75,25 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #000;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 15px;
+    border: 2px solid rgb(59, 188, 235);
+    -webkit-box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+    -moz-box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
+    box-shadow: 4px 15px 53px -13px rgba(58, 188, 235, 1);
 }
 
 .recommended>h2{
     flex-basis: 100%;
+    margin-bottom: 2%;
 }
 
 .recommended>.music{
     flex-basis: 80%;
+    background: rgb(20,20,20);
+    border: none;
 }
 
 .music>img{

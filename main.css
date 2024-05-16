@@ -10,9 +10,8 @@ html{
 body{
     display: flex;
     flex-wrap: wrap;
-    background: rgb(2,0,36);
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,22,125,1) 32%, rgba(0,0,0,1) 100%); */
-    background-color: rgb(31, 7, 41); 
+    background-color: rgb(15, 15, 15); 
     color: rgb(245, 234, 255);
     text-align: center;
     font-family: "Arial Black", Gadget, sans-serif;
